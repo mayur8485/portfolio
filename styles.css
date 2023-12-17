@@ -1,0 +1,87 @@
+/* Basic Styles */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 41, 61);
+}
+
+/* Scroll Bar Styling */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(238, 232, 232); 
+    border-radius: 10px;
+} */
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0px 0px 6px rgba(112, 108, 108, 0.705);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0px 0px 6px rgba(247, 247, 247, 0.979);
+}
+
+
+/* Header Styles */
+
+.nav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 0px 0.1px white;
+}
+
+.header-icon {
+    font-size: 30px;
+    border-radius: 100px;
+    background-color: rgb(40, 41, 61);
+    /* background-color: rgba(181, 184, 196, 0.144); */
+    display: block;
+    color: white;
+    box-shadow: 0px 0px 0px 0px white;
+}
+
+.header-icon:hover {
+    transition: ease-in 0.1s;
+    color: rgb(243, 243, 243);
+    box-shadow: 0px 0px 20px 0.1px white;
+}
+
+
+/* Font Styling */
+.name {
+    color: white;
+    font-family: serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: white;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.subtitle-content {
+    color: rgb(20, 230, 202);
+}
+
+/* Single Page Section */
+
+.pageBox {
+    width: 100%;
+    height: calc(100vh - 78px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
