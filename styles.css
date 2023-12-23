@@ -1,13 +1,29 @@
-/* Basic Styles */
+/* ---------------------------------------------------------------------
+    Basic Styles
+------------------------------------------------------------------------*/
 
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(40, 41, 61);
+    background-color: #020e2ee7;
+    scroll-behavior: smooth;
 }
 
-/* Scroll Bar Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Raleway", sans-serif;
+    color: rgba(158, 158, 158, 0.788);
+}
+
+/* ---------------------------------------------------------------------
+    Scroll Bar Styling
+------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -28,7 +44,9 @@ body {
 }
 
 
-/* Header Styles */
+/* ---------------------------------------------------------------------
+    Header Styles
+------------------------------------------------------------------------*/
 
 .nav {
     overflow: hidden;
@@ -38,26 +56,48 @@ body {
     left: 0;
     right: 0;
     box-shadow: 0px 0px 0px 0.1px white;
+    background-color: #020e2ee7;
+    z-index: 10;
 }
 
 .header-icon {
     font-size: 30px;
     border-radius: 100px;
-    background-color: rgb(40, 41, 61);
-    /* background-color: rgba(181, 184, 196, 0.144); */
-    display: block;
-    color: white;
+    background-color: #020e2ee7;
+    color: rgb(255, 255, 255);
     box-shadow: 0px 0px 0px 0px white;
 }
 
 .header-icon:hover {
     transition: ease-in 0.1s;
-    color: rgb(243, 243, 243);
-    box-shadow: 0px 0px 20px 0.1px white;
+    color: rgb(247, 247, 247);
+    background-color: #082983a6;
+    box-shadow: 0px 0px 20px 0.1px rgb(250, 250, 250);
 }
 
+.header-icon span {
+    opacity: 1;
+    font-size: 20px;
+    color: rgba(28, 172, 153, 0.76);
+}
 
-/* Font Styling */
+/* ---------------------------------------------------------------------
+    Single Page Section
+------------------------------------------------------------------------*/
+
+.pageBox {
+    width: 100%;
+    height: calc(100vh - 78px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------
+    About Page Section
+------------------------------------------------------------------------*/
+
 .name {
     color: white;
     font-family: serif;
@@ -75,13 +115,45 @@ body {
     color: rgb(20, 230, 202);
 }
 
-/* Single Page Section */
+.heading {
+    color: white;
+    font-family: serif;
+    font-size: 50px;
+    font-weight: 400;
+}
 
-.pageBox {
+.skills {
+    color: rgba(28, 172, 153, 0.76);
+    padding-bottom: 2px;
+}
+
+.card-box {
+    height: 350px;
+    background-color: #04174be7;
+}
+
+.icon {
+    height: 300px;
     width: 100%;
-    height: calc(100vh - 78px);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+.btn-rounded {
+    border-radius: 20px;
+}
+
+.project-image {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.project-intro {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }

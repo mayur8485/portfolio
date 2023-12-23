@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Mayuresh Takawane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap -->
@@ -17,6 +17,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- styles.css file -->
     <link rel="stylesheet" href="styles.css">
 
@@ -27,23 +30,128 @@
 <body>
     <!-- Nav Tabs -->
     <ul class="nav justify-content-center">
-        <li class="nav-item m-2">
-            <a class="nav-link active header-icon" href="#intro"><i class="ri-home-2-line"></i></a>
+        <li class="nav-item m-2 active">
+            <a class="nav-link active header-icon" href="#intro"><i
+                    class="ri-profile-line"></i><span>&nbsp;Home</span></a>
         </li>
         <li class="nav-item m-2">
-            <a class="nav-link header-icon" href="#about"><i class="ri-user-line"></i></a>
+            <a class="nav-link header-icon" href="#about"><i class="ri-user-line"></i><span>&nbsp;About</span></a>
+        </li>
+        <li class="nav-item m-2">
+            <a class="nav-link header-icon" href="#projects"><i
+                    class="ri-file-3-line"></i><span>&nbsp;Projects</span></a>
         </li>
     </ul>
 
-    <!-- Main Screen -->
+    <!-- Main Screens -->
     <main>
+        <!-- Intro Section -->
         <section class="pageBox" id="intro">
-            <div class="intro-box">
+            <div class="container">
                 <span class="name">Mayuresh Takawane</span>
                 <h6 class="subtitle py-2">I'm <span class="subtitle-content"></span></h6>
             </div>
         </section>
+
+        <!-- About Section -->
+        <section class="pageBox" id="about">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20">
+                <span class="heading">ABOUT</span>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <p align=justify>I am Software Engineer with 2.5 years of experience specializing in web development, angular,
+                            GCP, and continuous improvement. Adept at identifying opportunities to enhance the user
+                            experience and develop new features to improve functionality. </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <h4 class="skills"> Skills</h4>
+                        <div class="row">
+                            <div class="col-xs-6  mx-2">
+                                <ul style="list-style-type: none" class="p-0">
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Angular</strong>
+                                    </li>
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Javascript</strong>
+                                    </li>
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Typescript</strong>
+                                    </li>
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>HTML & CSS</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul style="list-style-type: none" class="p-0">
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Google
+                                            Cloud</strong></li>
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Big Query</strong>
+                                    </li>
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Git</strong></li>
+                                    <li class="skills"><i class="ri-arrow-right-s-line"></i> <strong>Python</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="pageBox" id="projects">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20">
+                <span class="heading">Projects</span>
+                <div class="row">
+                    <div class="col-lg-6 my-2">
+                        <div class="card-box">
+                            <div class="d-flex flex-column">
+                                <div class="project-intro">
+                                    <img src="./images/portfolio.png" alt="Italian Trulli" class="project-image m-4">
+                                    <div class="d-flex flex-column m-4">
+                                        <h2 class="m-2">Portfolio</h2>
+                                        <div>
+                                            <button class="btn btn-primary btn-rounded m-2 flex-column"><i class="ri-external-link-line"></i> CheckOut</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-description m-5">
+                                    <p style="text-indent: 30px;" align=justify>I designed and developed my short Portfolio. I have used bootstrap and some custom css classes to make page interative and attractive.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-2">
+                        <div class="card-box">
+                            <div class="d-flex flex-column">
+                                <div class="project-intro">
+                                    <img src="./images/eventPlanner.png" alt="Italian Trulli" class="project-image m-4">
+                                    <div class="d-flex flex-column m-4">
+                                        <h2 class="m-2">Event Planner</h2>
+                                        <div>
+                                            <button class="btn btn-primary btn-rounded m-2 flex-column"><i class="ri-external-link-line"></i> CheckOut</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-description m-5">
+                                    <p style="text-indent: 30px;" align=justify>An online app for event planning for user's. It containes multiple vendors with various packagaes for different occasions. You can even customise your packagaes accordinly.
+                                    Every thing at once palce with negotiable and affordable prices.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
