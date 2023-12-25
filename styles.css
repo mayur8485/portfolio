@@ -84,8 +84,7 @@ p {
 .header-icon {
     font-size: 30px;
     border-radius: 100px;
-    background-color: #020e2ee7;
-    color: rgb(255, 255, 255);
+    color: rgb(145, 145, 145);
     box-shadow: 0px 0px 0px 0px white;
 }
 
@@ -94,6 +93,12 @@ p {
     color: rgb(247, 247, 247);
     background-color: #082983a6;
     box-shadow: 0px 0px 20px 0.1px rgb(250, 250, 250);
+}
+
+li.nav-item.active {
+    color: white;
+    background-color: #082983a6;    
+    border-radius: 100px;
 }
 
 .header-icon span {

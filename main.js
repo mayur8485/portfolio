@@ -17,4 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     );
 
+    var navItems = document.querySelectorAll(".nav-item");
+    let lastActive = document.querySelector('li.active');
+    for (var i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener("click", function () {
+            console.log(lastActive)
+            this.classList.add("active");
+            lastActive.classList.remove("active");
+            lastActive = this;
+            console.log(this)
+        });
+    }
+
 })
