@@ -115,6 +115,26 @@ p {
     flex-direction: column;
 }
 
+
+
+/* ---------------------------------------------------------------------
+    Home Page Section
+------------------------------------------------------------------------*/
+
+.home-icons {
+    border-radius: 100%;
+    color: #555454c9;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-icons:hover {
+    transition: ease-in 0.2s;
+    color: rgb(5, 20, 235);
+}
+
 /* ---------------------------------------------------------------------
     About Page Section
 ------------------------------------------------------------------------*/
@@ -147,8 +167,6 @@ p {
     color: rgba(28, 172, 153, 0.76);
     padding-bottom: 2px;
 }
-
-
 
 /* ---------------------------------------------------------------------
     Project Page Section
@@ -246,6 +264,3 @@ p {
 .copyright {
     color: #555454c9;
 }
-
-
-
