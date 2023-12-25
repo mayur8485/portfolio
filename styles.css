@@ -21,6 +21,27 @@ p {
     color: rgba(158, 158, 158, 0.788);
 }
 
+
+/* ---------------------------------------------------------------------
+    Generic Classes
+------------------------------------------------------------------------*/
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 /* ---------------------------------------------------------------------
     Scroll Bar Styling
 ------------------------------------------------------------------------*/
@@ -203,6 +224,7 @@ p {
 .footer {
     width: 100%;
     background-color: #04174be7;
+    display: inline-block;
 }
 
 .footer-icons {
@@ -215,24 +237,15 @@ p {
     align-items: center;
 }
 
-
-
-/* ---------------------------------------------------------------------
-    Generic Classes
-------------------------------------------------------------------------*/
-
-.align-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-icons:hover {
+    transition: ease-in 0.3s;
+    color: white;
+    background-color: blue;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
+.copyright {
+    color: #555454c9;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
+
+
