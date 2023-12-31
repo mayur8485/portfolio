@@ -27,7 +27,6 @@ function checkActiveSection() {
                 const active_tab = nav_menu.querySelector("a[href$='#" + sections[i].id + "']").parentNode;
                 if (isLastActive) {
                     isLastActive.classList.remove('active');
-                    console.log(isLastActive)
                     isLastActive = active_tab;
                 }
                 active_tab.classList.add('active');
@@ -37,7 +36,7 @@ function checkActiveSection() {
 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
     var typed = new Typed(".subtitle-content",
         {
             strings: ['Software Developer.', 'Frontend Developer (Angular).', ' Data Analytics.'],
@@ -57,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             active_tab.classList.add('active');
         }
     }
-
     checkActiveSection();
-})
+}
+
+init();
