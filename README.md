@@ -1,4 +1,4 @@
 # portfolio
 My Portfolio
 
-This has description about the technology i know and learned. It includes projects i did.
+The portfolio is general description of me. The technologies I know and learned over time. It also have the projects I did.
