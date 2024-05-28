@@ -39,7 +39,7 @@ function checkActiveSection() {
 function init() {
     var typed = new Typed(".subtitle-content",
         {
-            strings: ['Software Developer.', 'Frontend Developer (Angular).', ' Data Analytics.'],
+            strings: ['Software Engineer.', 'Frontend Developer (Angular).'],
             typeSpeed: 70,
             backSpeed: 40,
             loop: true
