@@ -97,7 +97,7 @@ p {
 
 li.nav-item.active {
     color: white;
-    background-color: #082983a6;    
+    background-color: #082983a6;
     border-radius: 100px;
 }
 
@@ -206,6 +206,56 @@ li.nav-item.active {
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.card {
+    height: 450px;
+    width: 350px;
+    margin-right: 15px;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    background-color: #24408da6;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.project-icon {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-desc {
+    height: 60%;
+}
+
+.proj-decs {
+    text-indent: 30px;
+    color: rgba(0, 0, 0);
+    font-size: 15px;
+}
+
+.project-description {
+    height: 50%;
+}
+
+.project-links {
+    height: 20%;
 }
 
 /* ---------------------------------------------------------------------
